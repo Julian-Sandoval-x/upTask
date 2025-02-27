@@ -1,0 +1,24 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+
+
+.restablecer {
+    margin-top: 5rem;
+    .uptask {
+        @include mix.textoDegradado(var.$azul);
+
+    }
+    
+    input[type="submit"] {
+        @include mix.boton(var.$azul, var.$blanco);
+    }
+
+    .acciones {
+        a {
+            color: var.$azul;
+        }
+    }
+}
+
+    

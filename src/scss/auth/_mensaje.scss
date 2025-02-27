@@ -1,0 +1,14 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+
+
+.mensaje {
+    margin-top: 5rem;
+    .uptask {
+        @include mix.textoDegradado(var.$indigo);
+
+    }
+}
+
+    

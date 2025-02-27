@@ -1,0 +1,25 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+
+
+.login {
+    margin-top: 5rem;
+    .uptask {
+        @include mix.textoDegradado(var.$cyan);
+
+    }
+    
+    input[type="submit"] {
+        @include mix.boton(var.$cyan, var.$blanco);
+    }
+
+    .acciones {
+        a {
+            color: var.$cyan;
+        }
+    }
+}
+
+    
+    

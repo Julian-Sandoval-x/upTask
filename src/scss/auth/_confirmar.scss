@@ -1,0 +1,18 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+
+
+.confirmar {
+    margin-top: 5rem;
+    .uptask {
+        @include mix.textoDegradado(var.$indigo);
+
+    }
+
+    .acciones {
+        justify-content: center;
+    }
+}
+
+    

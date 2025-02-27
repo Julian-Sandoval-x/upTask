@@ -1,0 +1,21 @@
+@use 'base/mixins' as mix;
+@use 'base/variables' as var;
+
+.acciones {
+    margin-top: 5rem;
+
+    @include mix.tablet() {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: var.$negro;
+        &:last-of-type {
+            margin-bottom: 0;
+        } // El ultimo elemento no tendra margin hacia abajo
+    }
+}

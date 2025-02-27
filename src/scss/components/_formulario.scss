@@ -1,0 +1,22 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.formulario {
+    margin-top: 5rem;
+    .campo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    label {
+        flex: 0 0 10rem;
+    }
+}
+.campo input[type="email"],
+.campo input[type="text"],
+.campo input[type="password"] {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    background-color: lighten(var.$gris, 40%);
+}
